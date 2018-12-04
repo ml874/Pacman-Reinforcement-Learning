@@ -179,6 +179,7 @@ def main(plot_scores=True):
         
 
 
+
         episodes.append(num_episodes)
         num_episodes += 1
 
