@@ -2,3 +2,4 @@ gym
 atari_py
 keras
 tensorflow
+matplotlib
