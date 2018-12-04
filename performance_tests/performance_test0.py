@@ -1,7 +1,7 @@
 # DQN Agent for the MsPacman
 # it uses Neural Network to approximate q function and replay memory & target q network
 
-weight_path = "../AWS_models/saved-weights-1/first_aws_model--1000"
+weight_path = "../AWS_models/saved-weights-1/first_aws_model--4000"
 
 class TEST_DQNAgent:
     def __init__(self, state_size, action_size):
@@ -102,6 +102,9 @@ if __name__ == "__main__":
                 pylab.savefig("./pacman.png")
                 print("episode:", e, "  score:", score)
 
+        if e % 100 == 0:
+            print('Average Score for {} Episodes so far: {}'.format(EPISODES, np.mean(ALL_SCORES)))
+            
         ALL_SCORES[e] = score
 
     env.close()
