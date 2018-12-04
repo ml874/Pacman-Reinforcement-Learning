@@ -25,7 +25,7 @@ def huber_loss(y_true, y_pred):
 ENV_NAME = 'MsPacman-ram-v0'
 
 class DQNAgent:
-    
+
     def __init__(self, state_size, action_size):
         # if you want to see MsPacman learning, then change to True
         self.render = False
@@ -34,7 +34,7 @@ class DQNAgent:
         # get size of state and action
         self.state_size = state_size
         self.action_size = action_size
-        
+
         # These are hyper parameters for the DQN
         self.discount_factor = 0.99
         self.learning_rate = 0.0025
@@ -42,23 +42,23 @@ class DQNAgent:
         self.epsilon_min = 0.1
         self.epsilon_decay = 0.99999
         self.batch_size = 32
-        self.train_start = 50000  
+        self.train_start = 50000
 
         # create replay memory using deque
         self.memory = deque(maxlen=750000)
 
         # create main model
         self.model = self.build_model()
-        
+
         # keep track of # of frames trained on
         self.trained_frames = 0
-        
+
         # keep track of # of frames trained on
         self.million_frames = 0
-        
+
         # keep track of average q-value predictions
         self.q_val_predictions = []
-    
+
     # approximate Q function using Neural Network: state is input and Q Value of each action is output
     def build_model(self):
         model = Sequential()
@@ -71,8 +71,8 @@ class DQNAgent:
         model.summary()
 
         return model
-    
-    
+
+
     # save sample <s,a,r,s'> to the replay memory
     def save_memory(self, state, action, reward, next_state, done):
         self.memory.append((state, action, reward, next_state, done))
@@ -89,20 +89,20 @@ class DQNAgent:
             q_values = self.model.predict(state)
             best_action = np.argmax(q_values[0])
             return best_action #, np.amax(q_values[0])
-    
-        
+
+
     def experience_replay(self, target_model):
         if len(self.memory) < self.train_start:
             return
         batch = random.sample(self.memory, self.batch_size)
         batch = np.array(batch)
-        
+
         curr_state = np.stack(batch[:, 0], axis=1)[0] #STATE
         next_state = np.stack(batch[:, 3], axis=1)[0] #NEXT STATE
         action = batch[:, 1]                           #ACTION
         reward = batch[:, 2]                   #REWARD
         done = batch[:, 4]  #DEAD
-        
+
         curr_state_Q_target = self.model.predict(curr_state)
         next_state_Q_target = target_model.predict(next_state)
         max_val_next_state_Q_target = np.amax(next_state_Q_target, axis=1)
@@ -110,15 +110,15 @@ class DQNAgent:
 
 #         print(next_state_Q_target)
 #         print(max_val_next_state_Q_target)
-        
-        
+
+
         # VECTORIZE BELOW FOR LOOP ATTEMPT
 #         done_ix = np.where(done == True)
 #         not_done_ix = np.where(done == False)
-        
+
 #         done_reward = np.take(reward, done_ix)
 #         not_done_reward = np.take(reward, not_done_ix) + self.discount_factor * np.take(max_val_next_state_Q_target, not_done_ix)
-        
+
 #         done_actions = np.take(actions, done_ix)
 #         not_done_actions  np.take(actions, not_done_ix)
 # #         print(done_reward, not_done_reward.shape)
@@ -155,10 +155,10 @@ def main(plot_scores=True):
     episodes = []
     scores = []
     pos = [] # Mountaincar
-    
+
     ma_scores = []
-    
-    
+
+
     env = gym.make(ENV_NAME)
 #     env = wrappers.Monitor('/tmp/cartpole-experiment-0', force=True)
 
@@ -168,18 +168,18 @@ def main(plot_scores=True):
     # Intiailize Target Model
     target_model = keras.models.clone_model(agent.model)
     target_model.set_weights(agent.model.get_weights())
-    
+
     FRAMES = 0
     num_episodes = 0
-    
+
 #     print('HI')
-# 
+#
 #     print(agent.trained_frames)
     while agent.trained_frames <= 100000000:
-        
+
         episodes.append(num_episodes)
         num_episodes += 1
-        
+
         state = env.reset()
         state = np.reshape(state, [1, observation_space])/255.0
         score = 0
@@ -207,28 +207,28 @@ def main(plot_scores=True):
 
 
                 if dead:
-                    reward = -1.0                
+                    reward = -1.0
                 elif reward == 10.0:
                     reward = 0.75
                 elif reward >= 100.0:
                     reward == 1.0
                 else:
-                    reward = -0.02                
+                    reward = -0.02
 
     #             print(done, reward)
                 state_next = np.reshape(state_next, [1, observation_space])/255.0
                 agent.save_memory(state, action, reward, state_next, done)
                 state = state_next
                 if done:
-                    print("Episode: {}, Frames Seen: {}, Frames Trained: {}, Score: {}, Memory Length: {}, Epsilon: {}".format(
-                        num_episodes, FRAMES, agent.trained_frames, score, len(agent.memory), agent.epsilon))
-                    pos.append(state_next[0][0])
+                    # print("Episode: {}, Frames Seen: {}, Frames Trained: {}, Score: {}, Memory Length: {}, Epsilon: {}".format(
+                    #     num_episodes, FRAMES, agent.trained_frames, score, len(agent.memory), agent.epsilon))
+                    # pos.append(state_next[0][0])
     #                 print(pos)
 
                     break
     #                 score_logger.add_score(step, run)
                 if agent.million_frames > 100000:
-                    print('Update Target Model')
+                    # print('Update Target Model')
                     agent.million_frames = 0
 
                     """Returns a copy of a keras model."""
@@ -245,6 +245,7 @@ def main(plot_scores=True):
 
         if curr_episode % 50 == 0:
             print("Completed: " + str(curr_episode) + " episodes")
+            pos.append(state_next[0][0])
             sys.stdout.flush()
 
         # save the model
@@ -255,19 +256,19 @@ def main(plot_scores=True):
 
         curr_episode += 1
 
-        
+
 
 
     #         break
-        
-        
-        
-        
+
+
+
+
         # SAVE MODEL
 #         if num_episodes % 100 == 0:
 #             timestr = time.strftime("%Y%m%d-%H%M%S")
 #             agent.model.save_weights("./Saved Weights/Pacmanv3_{}.h5".format(timestr))
-            
-            
+
+
 if __name__ == "__main__":
     main(plot_scores=False)
