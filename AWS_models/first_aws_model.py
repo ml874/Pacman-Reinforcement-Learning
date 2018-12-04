@@ -170,6 +170,8 @@ if __name__ == "__main__":
         # save the model
         if curr_episode % episodes_per_save == 0:
             curr_episode = 1
-            agent.model.save_weights(weights_path + "--" + str(thousands_of_episodes) + "000")
+            open(model_name + "--" + str(thousands_of_episodes) + "000", 'a').close() # create file
+            agent.model.save_weights(model_name  + "--" + str(thousands_of_episodes) + "000")
+            print("saved weights successfully")
 
         curr_episode += 1
