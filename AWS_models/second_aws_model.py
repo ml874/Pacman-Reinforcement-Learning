@@ -175,7 +175,7 @@ def main(plot_scores=True):
 #     print('HI')
 # 
 #     print(agent.trained_frames)
-    while agent.trained_frames <= 100000000:
+    while True:
         
         episodes.append(num_episodes)
         num_episodes += 1
