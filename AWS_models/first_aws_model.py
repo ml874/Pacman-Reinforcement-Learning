@@ -122,6 +122,8 @@ if __name__ == "__main__":
     episodes_per_save = 1000
     thousands_of_episodes = 0
     curr_episode = 1
+    
+    print("Running first episode")
 
     while True:
         done = False
@@ -165,6 +167,7 @@ if __name__ == "__main__":
        
         if curr_episode % 50 == 0:
             print("Completed: " + str(curr_episode) + " episodes")
+            sys.stdout.flush()
 
         # save the model
         if curr_episode % episodes_per_save == 0:
