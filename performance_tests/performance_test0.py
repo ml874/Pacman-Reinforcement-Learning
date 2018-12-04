@@ -103,8 +103,8 @@ if __name__ == "__main__":
                 print("episode:", e, "  score:", score)
 
         if e % 100 == 0:
-            print('Average Score for {} Episodes so far: {}'.format(EPISODES, np.mean(ALL_SCORES)))
-            
+            print('Average Score for {} Episodes so far: {}'.format(e, np.mean(ALL_SCORES[1:e:1])))
+
         ALL_SCORES[e] = score
 
     env.close()
