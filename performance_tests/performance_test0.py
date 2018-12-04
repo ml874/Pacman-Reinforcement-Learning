@@ -58,7 +58,7 @@ import matplotlib.pyplot as plt
 
 
 if __name__ == "__main__":
-    EPISODES = 2500
+    EPISODES = 1000
     ALL_SCORES = np.zeros(EPISODES)
 
     env = gym.make('MsPacman-ram-v0')
