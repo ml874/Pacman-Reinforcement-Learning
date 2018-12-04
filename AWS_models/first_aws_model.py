@@ -119,7 +119,7 @@ if __name__ == "__main__":
     # model meta data
     model_name = "first_aws_model"
     weights_path = "./saved-weights/" + model_name
-    episodes_per_save = 2000
+    episodes_per_save = 1000
     thousands_of_episodes = 0
     curr_episode = 1
 
@@ -169,7 +169,7 @@ if __name__ == "__main__":
 
         # save the model
         if curr_episode % episodes_per_save == 0:
-            curr_episode = 0
+            curr_episode = 1
             agent.model.save_weights(weights_path + "--" + str(thousands_of_episodes) + "000")
 
         curr_episode += 1
