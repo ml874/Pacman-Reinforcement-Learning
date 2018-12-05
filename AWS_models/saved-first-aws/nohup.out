@@ -1,0 +1,127 @@
+python3: can't open file 'first_aws_model.py': [Errno 2] No such file or directory
+2018-12-04 22:32:30.953373: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense_1 (Dense)              (None, 128)               16512     
+_________________________________________________________________
+dense_2 (Dense)              (None, 128)               16512     
+_________________________________________________________________
+dense_3 (Dense)              (None, 128)               16512     
+_________________________________________________________________
+dense_4 (Dense)              (None, 9)                 1161      
+=================================================================
+Total params: 50,697
+Trainable params: 50,697
+Non-trainable params: 0
+_________________________________________________________________
+Running first episode
+Completed: 50 episodes
+Completed: 100 episodes
+Completed: 150 episodes
+Completed: 200 episodes
+Completed: 250 episodes
+Completed: 300 episodes
+Completed: 350 episodes
+Completed: 400 episodes
+Completed: 450 episodes
+Completed: 500 episodes
+Completed: 550 episodes
+Completed: 600 episodes
+Completed: 650 episodes
+Completed: 700 episodes
+Completed: 750 episodes
+Completed: 800 episodes
+Completed: 850 episodes
+Completed: 900 episodes
+Completed: 950 episodes
+Completed: 1000 episodes
+saved weights successfully
+Completed: 1050 episodes
+Completed: 1100 episodes
+Completed: 1150 episodes
+Completed: 1200 episodes
+Completed: 1250 episodes
+Completed: 1300 episodes
+Completed: 1350 episodes
+Completed: 1400 episodes
+Completed: 1450 episodes
+Completed: 1500 episodes
+Completed: 1550 episodes
+Completed: 1600 episodes
+Completed: 1650 episodes
+Completed: 1700 episodes
+Completed: 1750 episodes
+Completed: 1800 episodes
+Completed: 1850 episodes
+Completed: 1900 episodes
+Completed: 1950 episodes
+Completed: 2000 episodes
+saved weights successfully
+Completed: 2050 episodes
+Completed: 2100 episodes
+Completed: 2150 episodes
+Completed: 2200 episodes
+Completed: 2250 episodes
+Completed: 2300 episodes
+Completed: 2350 episodes
+Completed: 2400 episodes
+Completed: 2450 episodes
+Completed: 2500 episodes
+Completed: 2550 episodes
+Completed: 2600 episodes
+Completed: 2650 episodes
+Completed: 2700 episodes
+Completed: 2750 episodes
+Completed: 2800 episodes
+Completed: 2850 episodes
+Completed: 2900 episodes
+Completed: 2950 episodes
+Completed: 3000 episodes
+saved weights successfully
+Completed: 3050 episodes
+Completed: 3100 episodes
+Completed: 3150 episodes
+Completed: 3200 episodes
+Completed: 3250 episodes
+Completed: 3300 episodes
+Completed: 3350 episodes
+Completed: 3400 episodes
+Completed: 3450 episodes
+Completed: 3500 episodes
+Completed: 3550 episodes
+Completed: 3600 episodes
+Completed: 3650 episodes
+Completed: 3700 episodes
+Completed: 3750 episodes
+Completed: 3800 episodes
+Completed: 3850 episodes
+Completed: 3900 episodes
+Completed: 3950 episodes
+Completed: 4000 episodes
+Using TensorFlow backend.
+/usr/local/lib/python3.5/dist-packages/gym/envs/registration.py:14: PkgResourcesDeprecationWarning: Parameters to load are deprecated.  Call .resolve and .require separately.
+  result = entry_point.load(False)
+saved weights successfully
+Traceback (most recent call last):
+  File "../first_aws_model.py", line 131, in <module>
+    state = env.reset()
+  File "/usr/local/lib/python3.5/dist-packages/gym/wrappers/monitor.py", line 39, in reset
+    self._after_reset(observation)
+  File "/usr/local/lib/python3.5/dist-packages/gym/wrappers/monitor.py", line 193, in _after_reset
+    self.reset_video_recorder()
+  File "/usr/local/lib/python3.5/dist-packages/gym/wrappers/monitor.py", line 214, in reset_video_recorder
+    self.video_recorder.capture_frame()
+  File "/usr/local/lib/python3.5/dist-packages/gym/wrappers/monitoring/video_recorder.py", line 116, in capture_frame
+    self._encode_image_frame(frame)
+  File "/usr/local/lib/python3.5/dist-packages/gym/wrappers/monitoring/video_recorder.py", line 162, in _encode_image_frame
+    self.encoder = ImageEncoder(self.path, frame.shape, self.frames_per_sec)
+  File "/usr/local/lib/python3.5/dist-packages/gym/wrappers/monitoring/video_recorder.py", line 256, in __init__
+    self.start()
+  File "/usr/local/lib/python3.5/dist-packages/gym/wrappers/monitoring/video_recorder.py", line 288, in start
+    self.proc = subprocess.Popen(self.cmdline, stdin=subprocess.PIPE, preexec_fn=os.setsid)
+  File "/usr/lib/python3.5/subprocess.py", line 947, in __init__
+    restore_signals, start_new_session)
+  File "/usr/lib/python3.5/subprocess.py", line 1490, in _execute_child
+    restore_signals, start_new_session, preexec_fn)
+OSError: [Errno 12] Cannot allocate memory

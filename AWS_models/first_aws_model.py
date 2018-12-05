@@ -34,7 +34,7 @@ class DQNAgent:
         self.train_start = 25000
 
         # create replay memory using deque
-        self.memory = deque(maxlen=1000000)
+        self.memory = deque(maxlen=100000)
 
         # create main model
         self.model = self.build_model()
