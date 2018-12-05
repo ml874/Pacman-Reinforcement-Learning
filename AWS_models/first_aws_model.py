@@ -18,7 +18,7 @@ class DQNAgent:
     def __init__(self, state_size, action_size):
         # if you want to see MsPacman learning, then change to True
         self.render = False
-        self.load_model = False
+        self.load_model = True
 
         # get size of state and action
         self.state_size = state_size
@@ -40,7 +40,7 @@ class DQNAgent:
         self.model = self.build_model()
 
         if self.load_model:
-            self.model.load_weights("./Saved Weights/pacman.h5")
+            self.model.load_weights("./first_aws_model--6000")
 
     # approximate Q function using Neural Network
     # state is input and Q Value of each action is output of network
@@ -121,7 +121,7 @@ if __name__ == "__main__":
     weights_path = "./saved-weights/" + model_name
     episodes_per_save = 1000
     thousands_of_episodes = 0
-    curr_episode = 1
+    curr_episode = 6001
     
     print("Running first episode")
 
