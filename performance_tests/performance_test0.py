@@ -72,38 +72,41 @@ if __name__ == "__main__":
     scores, episodes = [], []
 
     for e in range(EPISODES):
-        done = False
-        score = 0
-        state = env.reset()
-        state = np.reshape(state, [1, state_size])
-        lives = 3
-        while not done:
-            dead = False
-            while not dead:
-                if agent.render:
-                    env.render()
+        with open('../Saved Scores/performance_test0.txt', 'a+') as file:
+            done = False
+            score = 0
+            state = env.reset()
+            state = np.reshape(state, [1, state_size])
+            lives = 3
+            while not done:
+                dead = False
+                while not dead:
+                    if agent.render:
+                        env.render()
 
-                # get action for the current state and go one step in environment
-                action = agent.get_action(state)
-                next_state, reward, done, info = env.step(action)
-                next_state = np.reshape(next_state, [1, state_size])
+                    # get action for the current state and go one step in environment
+                    action = agent.get_action(state)
+                    next_state, reward, done, info = env.step(action)
+                    next_state = np.reshape(next_state, [1, state_size])
 
-                state = next_state
-                score += reward
-                dead = info['ale.lives']<lives
-                lives = info['ale.lives']
-                # if an action make the Pacman dead, then gives penalty of -100
-                reward = reward if not dead else -500
+                    state = next_state
+                    score += reward
+                    dead = info['ale.lives']<lives
+                    lives = info['ale.lives']
+                    # if an action make the Pacman dead, then gives penalty of -100
+                    reward = reward if not dead else -500
 
-            if done:
-                scores.append(score)
-                episodes.append(e)
-                # pylab.plot(episodes, scores, 'b')
-                # pylab.savefig("./pacman.png")
-                print("episode:", e, "  score:", score)
+                if done:
+                    scores.append(score)
+                    episodes.append(e)
+                    # pylab.plot(episodes, scores, 'b')
+                    # pylab.savefig("./pacman.png")
+                    print("episode:", e, "  score:", score)
+                    file.write("episode:" + str(e) + "  score:" + str(score) + "\n")
 
-        if e % 100 == 0 and e > 0:
-            print('Average Score for {} Episodes so far: {}'.format(e, np.mean(ALL_SCORES[1:e:1])))
+
+            if e % 100 == 0 and e > 0:
+                print('Average Score for {} Episodes so far: {}'.format(e, np.mean(ALL_SCORES[1:e:1])))
 
         ALL_SCORES[e] = score
 
