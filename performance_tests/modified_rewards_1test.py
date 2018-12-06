@@ -1,8 +1,8 @@
 # DQN Agent for the MsPacman
 # it uses Neural Network to approximate q function and replay memory & target q network
 
-weight_path = "../AWS_models/modified_rewards_1-weights/modified_rewards_1--3000"
-logfile = "log1.pickle"
+# weight_path = "../AWS_models/first_aws_model-weights/first_aws_model--6000"
+weight_path = "../AWS_models/modified_rewards_1-weights/modified_rewards_1--1000"
 
 class TEST_DQNAgent:
     def __init__(self, state_size, action_size):
@@ -59,7 +59,7 @@ import matplotlib.pyplot as plt
 import pickle
 
 if __name__ == "__main__":
-    NUM_EPISODES = 1 #1000
+    NUM_EPISODES = 1000
     NUM_ACTIONS = 9
     NUM_LIVES = 3
 
@@ -72,6 +72,10 @@ if __name__ == "__main__":
     # get size of state and action from environment
     state_size = env.observation_space.shape[0]
     action_size = env.action_space.n
+
+    split_path = weight_path.split("/")
+    model_name = split_path[-1]
+    logfile = "logfile_" + model_name + ".pickle"
 
     agent = TEST_DQNAgent(state_size, action_size)
 
@@ -90,7 +94,6 @@ if __name__ == "__main__":
             i2 += 1
             # for every episode
             dead = False
-            life = 0
             steps_in_life = 0 # number of steps taken in this life of this episode
 
             while not dead:
@@ -113,13 +116,13 @@ if __name__ == "__main__":
                 lives = info['ale.lives']
                 # if an action make the Pacman dead, then gives penalty of -100
 
+            ALL_STEPS[e][NUM_LIVES - num_lives - 1] = steps_in_life
+
             if done:
-                ALL_STEPS[e][life] = steps_in_life
-                life += 1
                 # at the end of every life
                 # pylab.plot(episodes, scores, 'b')
                 # pylab.savefig("./pacman.png")
-                print("episode:", e, "  score:", score_in_episode)
+                print("episode:", e, "  score:", score_in_episode, "steps:", steps_in_life)
 
 
         if e % 100 == 0 and e > 0:
@@ -138,10 +141,6 @@ if __name__ == "__main__":
         'steps'     :   ALL_STEPS,
         'actions'   :   ALL_ACTIONS
     }
-
-    print(i1)
-    print(i2)
-    print(i3)
 
     with open(logfile, 'wb+') as f:
         pickle.dump(results, f)
