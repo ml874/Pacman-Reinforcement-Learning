@@ -63,8 +63,8 @@ class DQNAgent:
             return np.argmax(q_value[0])
 
     # save sample <s,a,r,s'> to the replay memory
-    def append_sample(self, state, action, reward, next_state, done):
-        self.memory.append((state, action, reward, next_state, done))
+    def append_sample(self, state, action, reward, next_state, dead):
+        self.memory.append((state, action, reward, next_state, dead))
         if self.epsilon > self.epsilon_min:
             self.epsilon *= self.epsilon_decay
 
@@ -151,7 +151,7 @@ if __name__ == "__main__":
                 next_state = np.reshape(next_state, [1, state_size])/256.0
 
                 # save the sample <s, a, r, s'> to the replay memory
-                agent.append_sample(state, action, reward, next_state, done)
+                agent.append_sample(state, action, reward, next_state, dead)
 
                 state = next_state
 
