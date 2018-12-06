@@ -119,9 +119,9 @@ if __name__ == "__main__":
     # model meta data
     model_name = "joe_rewards"
     weights_path = "./joe_rewards/" + model_name
-    episodes_per_save = 1000
+    episodes_per_save = 500
     thousands_of_episodes = 0
-    curr_episode = 6001
+    curr_episode = 1
 
     print("Running first episode")
 
