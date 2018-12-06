@@ -2,7 +2,6 @@
 # it uses Neural Network to approximate q function and replay memory & target q network
 
 weight_path = "../AWS_models/modified_rewards_2-weights/modified_rewards_2--4000"
->>>>>>> 62b4eb461cd0f00ac18c14d0abda2bb7772ec144
 
 class TEST_DQNAgent:
     def __init__(self, state_size, action_size):
