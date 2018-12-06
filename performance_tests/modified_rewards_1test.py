@@ -79,6 +79,7 @@ if __name__ == "__main__":
     i2 = 0
     i3 = 0
 
+<<<<<<< HEAD
     for e in range(NUM_EPISODES):
         i1 += 1
         done = False
