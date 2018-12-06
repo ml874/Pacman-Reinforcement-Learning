@@ -18,7 +18,7 @@ class DQNAgent:
     def __init__(self, state_size, action_size):
         # if you want to see MsPacman learning, then change to True
         self.render = False
-        self.load_model = True
+        self.load_model = False
 
         # get size of state and action
         self.state_size = state_size
@@ -40,7 +40,7 @@ class DQNAgent:
         self.model = self.build_model()
 
         if self.load_model:
-            self.model.load_weights("./first_aws_model--6000")
+            self.model.load_weights("./modified_rewards_1--EPISODES")
 
     # approximate Q function using Neural Network
     # state is input and Q Value of each action is output of network
@@ -63,8 +63,8 @@ class DQNAgent:
             return np.argmax(q_value[0])
 
     # save sample <s,a,r,s'> to the replay memory
-    def append_sample(self, state, action, reward, next_state, done):
-        self.memory.append((state, action, reward, next_state, done))
+    def append_sample(self, state, action, reward, next_state, dead):
+        self.memory.append((state, action, reward, next_state, dead))
         if self.epsilon > self.epsilon_min:
             self.epsilon *= self.epsilon_decay
 
@@ -117,12 +117,11 @@ if __name__ == "__main__":
     scores, episodes = [], []
 
     # model meta data
-    model_name = "first_aws_model"
+    model_name = "modified_rewards_1"
     weights_path = "./saved-weights/" + model_name
     episodes_per_save = 1000
-    thousands_of_episodes = 0
-    curr_episode = 6001
-    
+    curr_episode = 1
+
     print("Running first episode")
 
     while True:
@@ -145,26 +144,28 @@ if __name__ == "__main__":
                 dead = info['ale.lives'] != lives
                 lives = info['ale.lives']
 
-                reward = reward - 1 if not dead else -100  # if action make Pacman dead, then gives penalty of -100
+                reward = reward + 1 if not dead else -100
+                # reward pacman with + 1 regardless of if he got any pellets so long as not dead
+                # encourage survival, surviving 10 moves = recieving 1 pellet
 
                 next_state = np.reshape(next_state, [1, state_size])/256.0
 
                 # save the sample <s, a, r, s'> to the replay memory
-                agent.append_sample(state, action, reward, next_state, done)
+                agent.append_sample(state, action, reward, next_state, dead)
 
                 state = next_state
 
             if done:
                 scores.append(score)
                 episodes.append(e)
-                pylab.plot(episodes, scores, 'b')
-                pylab.savefig("./pacman.png")
+                # pylab.plot(episodes, scores, 'b')
+                # pylab.savefig("./pacman.png")
                 # print("episode:", e, "  score:", score, "  memory length:",
                       # len(agent.memory), "  epsilon:", agent.epsilon)
 
         # every time step do the training
         agent.train_model()
-       
+
         if curr_episode % 50 == 0:
             print("Completed: " + str(curr_episode) + " episodes")
             sys.stdout.flush()
@@ -174,5 +175,6 @@ if __name__ == "__main__":
             open(model_name + "--" + str(curr_episode), 'a').close() # create file
             agent.model.save_weights(model_name  + "--" + str(curr_episode))
             print("saved weights successfully")
+            sys.stdout.flush()
 
         curr_episode += 1
