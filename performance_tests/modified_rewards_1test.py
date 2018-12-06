@@ -1,8 +1,12 @@
 # DQN Agent for the MsPacman
 # it uses Neural Network to approximate q function and replay memory & target q network
 
+<<<<<<< HEAD
 weight_path = "../AWS_models/modifed_rewards_1-weights/modified_rewards_1--1000"
 logfile = "log1.pickle"
+=======
+weight_path = "../AWS_models/modified_rewards_1-weights/modified_rewards_1--3000"
+>>>>>>> 044362f040ec490f3577cb7364af3850491a1dd3
 
 class TEST_DQNAgent:
     def __init__(self, state_size, action_size):
@@ -79,6 +83,7 @@ if __name__ == "__main__":
     i2 = 0
     i3 = 0
 
+<<<<<<< HEAD
     for e in range(NUM_EPISODES):
         i1 += 1
         done = False
