@@ -103,10 +103,10 @@ class DQNAgent:
         action = batch[:, 1]                           #ACTION
 #         print(action)
         action = [a[0] for a in action]
-        
-        
+
+
         action = np.array(action) - 1
-        
+
         reward = batch[:, 2]                   #REWARD
         done = batch[:, 4]  #DEAD
 
@@ -152,7 +152,7 @@ def main(plot_scores=True):
     # model meta data
     model_name = "modified_action_size_1"
     weights_path = "./modified_action_size/" + model_name
-    episodes_per_save = 1000
+    episodes_per_save = 50
     curr_episode = 1
 
     print("Running first episode")
