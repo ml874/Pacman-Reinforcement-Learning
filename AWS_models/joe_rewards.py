@@ -18,7 +18,7 @@ class DQNAgent:
     def __init__(self, state_size, action_size):
         # if you want to see MsPacman learning, then change to True
         self.render = False
-        self.load_model = True
+        self.load_model = False
 
         # get size of state and action
         self.state_size = state_size
@@ -26,8 +26,8 @@ class DQNAgent:
 
         # These are hyper parameters for the DQN
         self.discount_factor = 0.90
-        self.learning_rate = 0.001
-        self.epsilon = 0.05
+        self.learning_rate = 0.01
+        self.epsilon = 1
         self.epsilon_decay = 0.9999999
         self.epsilon_min = 0.05
         self.batch_size = 128
@@ -117,11 +117,11 @@ if __name__ == "__main__":
     scores, episodes = [], []
 
     # model meta data
-    model_name = "first_aws_model"
-    weights_path = "./saved-weights/" + model_name
-    episodes_per_save = 1000
+    model_name = "joe_rewards"
+    weights_path = "./joe_rewards/" + model_name
+    episodes_per_save = 500
     thousands_of_episodes = 0
-    curr_episode = 6001
+    curr_episode = 1
 
     print("Running first episode")
 
@@ -145,7 +145,7 @@ if __name__ == "__main__":
                 dead = info['ale.lives'] != lives
                 lives = info['ale.lives']
 
-                reward = reward - 1 if not dead else -100  # if action make Pacman dead, then gives penalty of -100
+                reward = reward if not dead else -20  # if action make Pacman dead, then gives penalty of -100
 
                 next_state = np.reshape(next_state, [1, state_size])/256.0
 
