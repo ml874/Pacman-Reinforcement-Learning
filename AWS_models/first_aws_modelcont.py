@@ -27,7 +27,7 @@ class DQNAgent:
         # These are hyper parameters for the DQN
         self.discount_factor = 0.90
         self.learning_rate = 0.001
-        self.epsilon = 0.05
+        self.epsilon = 0.1
         self.epsilon_decay = 0.9999999
         self.epsilon_min = 0.05
         self.batch_size = 128
@@ -40,7 +40,7 @@ class DQNAgent:
         self.model = self.build_model()
 
         if self.load_model:
-            self.model.load_weights("./first_aws_model--6000")
+            self.model.load_weights("./first_aws_model--17000")
 
     # approximate Q function using Neural Network
     # state is input and Q Value of each action is output of network
@@ -117,11 +117,11 @@ if __name__ == "__main__":
     scores, episodes = [], []
 
     # model meta data
-    model_name = "first_aws_model"
+    model_name = "first_aws_modelcont"
     weights_path = "./saved-weights/" + model_name
     episodes_per_save = 1000
     thousands_of_episodes = 0
-    curr_episode = 6001
+    curr_episode = 17001
 
     print("Running first episode")
 

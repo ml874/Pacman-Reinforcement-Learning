@@ -2,12 +2,12 @@
 # it uses Neural Network to approximate q function and replay memory & target q network
 
 # weight_path = "../AWS_models/first_aws_model-weights/first_aws_model--6000"
-weight_path = "../AWS_models/modified_rewards_1-weights/modified_rewards_1--1000"
+# weight_path = "../AWS_models/modified_rewards_1-weights/modified_rewards_1--4000"
 
 class TEST_DQNAgent:
-    def __init__(self, state_size, action_size):
+    def __init__(self, state_size, action_size, weight_path):
         # if you want to see MsPacman learning, then change to True
-        self.render = True
+        self.render = False
         self.load_model = True
         self.epsilon = 0 # no random moves
 
@@ -19,6 +19,7 @@ class TEST_DQNAgent:
         self.model = self.build_model()
 
         if self.load_model:
+            print(weight_path)
             self.model.load_weights(weight_path)
 
     # approximate Q function using Neural Network
@@ -57,8 +58,10 @@ from keras.models import Sequential
 from gym import wrappers
 import matplotlib.pyplot as plt
 import pickle
+import os
 
-if __name__ == "__main__":
+def main(weight_path):
+
     NUM_EPISODES = 1000
     NUM_ACTIONS = 9
     NUM_LIVES = 3
@@ -77,7 +80,7 @@ if __name__ == "__main__":
     model_name = split_path[-1]
     logfile = "logfile_" + model_name + ".pickle"
 
-    agent = TEST_DQNAgent(state_size, action_size)
+    agent = TEST_DQNAgent(state_size, action_size, weight_path)
 
     i1 = 0
     i2 = 0
@@ -122,7 +125,7 @@ if __name__ == "__main__":
                 # at the end of every life
                 # pylab.plot(episodes, scores, 'b')
                 # pylab.savefig("./pacman.png")
-                print("episode:", e, "  score:", score_in_episode, "steps:", steps_in_life)
+                print("episode:", e, "\tscore:", score_in_episode, "\tsteps:", steps_in_life)
 
 
         if e % 100 == 0 and e > 0:
@@ -148,3 +151,16 @@ if __name__ == "__main__":
     print("-------------------------")
     print("Weight file: " + weight_path)
     print('Average Score for {} Episodes: {}'.format(NUM_EPISODES, np.mean(ALL_SCORES)))
+
+
+if __name__=="__main__":
+    root_base = "/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/AWS_models/"
+    test_dir = "joe_rewards"
+
+    for root, dirs, files in os.walk(os.path.join(root_base, test_dir)):
+        for file in files:
+            if "--" in file:
+                path = os.path.join(root, file)
+                print(path)
+                assert(os.path.exists(path))
+                main(path)
