@@ -28,7 +28,7 @@ class DQNAgent:
 
     def __init__(self, state_size, action_size):
         # if you want to see MsPacman learning, then change to True
-        self.render = True
+        self.render = False
         self.load_model = False
 
         # get size of state and action
@@ -63,7 +63,6 @@ class DQNAgent:
     def build_model(self):
         model = Sequential()
         model.add(Dense(128, input_shape=(self.state_size,), activation="relu"))
-        model.add(Dense(128, activation="relu"))
         model.add(Dense(128, activation="relu"))
         model.add(Dense(128, activation="relu"))
 
@@ -183,6 +182,7 @@ def main(plot_scores=True):
 #
 #     print(agent.trained_frames)
     while True:
+        print(curr_episode)
 
         episodes.append(num_episodes)
         num_episodes += 1
@@ -230,8 +230,8 @@ def main(plot_scores=True):
                 agent.save_memory(state, action, reward, state_next, done)
                 state = state_next
                 if done:
-                    print("Episode: {}, Frames Seen: {}, Frames Trained: {}, Score: {}, Memory Length: {}, Epsilon: {}".format(
-                        num_episodes, FRAMES, agent.trained_frames, score, len(agent.memory), agent.epsilon))
+#                     print("Episode: {}, Frames Seen: {}, Frames Trained: {}, Score: {}, Memory Length: {}, Epsilon: {}".format(
+#                         num_episodes, FRAMES, agent.trained_frames, score, len(agent.memory), agent.epsilon))
                     # pos.append(state_next[0][0])
     #                 print(pos)
 
