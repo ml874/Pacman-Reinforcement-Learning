@@ -1,5 +1,4 @@
-python3: can't open file '../modifed_rewards_1.py': [Errno 2] No such file or directory
-2018-12-06 01:18:20.296144: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2018-12-06 02:11:01.935368: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
@@ -43,45 +42,3 @@ Completed: 1150 episodes
 Completed: 1200 episodes
 Completed: 1250 episodes
 Completed: 1300 episodes
-Completed: 1350 episodes
-Completed: 1400 episodes
-Completed: 1450 episodes
-Completed: 1500 episodes
-Completed: 1550 episodes
-Completed: 1600 episodes
-Completed: 1650 episodes
-Completed: 1700 episodes
-Completed: 1750 episodes
-Completed: 1800 episodes
-Completed: 1850 episodes
-Completed: 1900 episodes
-Completed: 1950 episodes
-Completed: 2000 episodes
-saved weights successfully
-Completed: 2050 episodes
-Completed: 2100 episodes
-Completed: 2150 episodes
-Completed: 2200 episodes
-Completed: 2250 episodes
-Completed: 2300 episodes
-Completed: 2350 episodes
-Completed: 2400 episodes
-Completed: 2450 episodes
-Completed: 2500 episodes
-Completed: 2550 episodes
-Completed: 2600 episodes
-Completed: 2650 episodes
-Completed: 2700 episodes
-Completed: 2750 episodes
-Completed: 2800 episodes
-Completed: 2850 episodes
-Completed: 2900 episodes
-Completed: 2950 episodes
-Completed: 3000 episodes
-saved weights successfully
-Completed: 3050 episodes
-Completed: 3100 episodes
-Completed: 3150 episodes
-Completed: 3200 episodes
-Completed: 3250 episodes
-Completed: 3300 episodes
