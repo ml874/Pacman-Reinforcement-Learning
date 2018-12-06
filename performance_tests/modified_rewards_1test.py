@@ -1,14 +1,14 @@
 # DQN Agent for the MsPacman
 # it uses Neural Network to approximate q function and replay memory & target q network
 
-weight_path = "../AWS_models/first_aws_model-weights/first_aws_model--6000"
+weight_path = "../AWS_models/modifed_rewards_1-weights/modified_rewards_1--2000"
 
 class TEST_DQNAgent:
     def __init__(self, state_size, action_size):
         # if you want to see MsPacman learning, then change to True
-        self.render = True
+        self.render = False
         self.load_model = True
-        self.epsilon = 0 # no random moves 
+        self.epsilon = 0 # no random moves
 
         # get size of state and action
         self.state_size = state_size
@@ -93,7 +93,6 @@ if __name__ == "__main__":
                 dead = info['ale.lives']<lives
                 lives = info['ale.lives']
                 # if an action make the Pacman dead, then gives penalty of -100
-                reward = reward if not dead else -500
 
             if done:
                 scores.append(score)
