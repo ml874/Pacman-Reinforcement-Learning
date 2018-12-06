@@ -1,0 +1,66 @@
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/first_aws_model/datafile_first_aws_model--6000.pickle
+------------------------------------------
+scores	avg: 353.51	std: 222.03959083911138	med: 310.0	min: 90.0	max: 2120.0
+steps:	238.921+/-42.67794230044367	233.414+/-85.92896254465077	228.076+/-87.32927472503134
+actions:	0.02313784335197477	0.0003983375475256671	0.3085859588156097	0.011907294431412413	0.0	0.0	0.10838207852246752	0.40396709931740077	0.14362138801360916
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/first_aws_model/logfile_first_aws_model--1000.pickle
+------------------------------------------
+scores	avg: 240.73	std: 51.7973657631351	med: 250.0	min: 140.0	max: 1010.0
+steps:	134.488+/-3.152753716990908	223.705+/-65.64688854012803	181.358+/-68.54572077088396
+actions:	0.598252991839511	0.2195325372392971	0.0	0.13586111414861615	1.4827143309900268e-05	0.04386981026816742	0.0024019972162038434	6.672214489455121e-05	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/first_aws_model/logfile_first_aws_model--10000.pickle
+------------------------------------------
+scores	avg: 379.66	std: 149.1304274787677	med: 370.0	min: 160.0	max: 1890.0
+steps:	336.379+/-145.28988732530567	250.624+/-103.58347659738007	226.113+/-97.45841282824173
+actions:	0.2107202416383394	0.0	1.9677389204000413e-05	0.17658858022717547	0.0	0.004271223294093339	0.0	0.2280904569581708	0.380309820493017
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/first_aws_model/logfile_first_aws_model--2000.pickle
+------------------------------------------
+scores	avg: 60.0	std: 0.0	med: 60.0	min: 60.0	max: 60.0
+steps:	153.094+/-3.354275480636621	138.503+/-3.0607173995650068	141.112+/-3.2682496844641467
+actions:	0.004564268365113737	0.16860753994023697	0.12372980455687309	0.5982265217501831	0.0	0.0	0.10487186538759305	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/first_aws_model/logfile_first_aws_model--3000.pickle
+------------------------------------------
+scores	avg: 60.0	std: 0.0	med: 60.0	min: 60.0	max: 60.0
+steps:	152.946+/-3.403393012862307	138.593+/-3.0902024205543537	140.887+/-3.3463758007731315
+actions:	0.4281588063622446	0.0	0.0	0.0338670662726108	0.0	0.0	0.5379741273651446	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/first_aws_model/logfile_first_aws_model--4000.pickle
+------------------------------------------
+scores	avg: 183.7	std: 114.55003273679147	med: 160.0	min: 110.0	max: 1720.0
+steps:	252.288+/-7.409929554321023	219.987+/-64.51112176206522	221.763+/-60.06427250038082
+actions:	0.010966258331676363	0.4306579754999006	0.0	0.048850351133511424	0.42565104504364315	0.08387436999126849	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/first_aws_model/logfile_first_aws_model--5000.pickle
+------------------------------------------
+scores	avg: 72.98	std: 15.359674475717254	med: 70.0	min: 70.0	max: 230.0
+steps:	249.876+/-34.484121331418585	130.144+/-46.64175451245388	150.193+/-97.18688054979413
+actions:	0.005967413096246226	0.0	0.794839055247608	0.176000965649654	0.018873547046187097	0.0	0.0	0.0	0.004319018960304633
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/first_aws_model/logfile_first_aws_model--6000.pickle
+------------------------------------------
+scores	avg: 347.63	std: 203.69311009457337	med: 310.0	min: 80.0	max: 2100.0
+steps:	240.761+/-43.47362279589774	235.229+/-91.20329247894503	222.834+/-78.55695032267997
+actions:	0.023405034744084348	0.00030765972548166634	0.30672243655054776	0.013505546460911474	0.0	0.0	0.11223999175758131	0.4043636165901572	0.13945571417123626
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/first_aws_model/logfile_first_aws_model--7000.pickle
+------------------------------------------
+scores	avg: 218.22	std: 3.8251274488570965	med: 220.0	min: 210.0	max: 220.0
+steps:	292.077+/-72.10328058417318	192.339+/-121.68730451037216	155.328+/-72.94853265145223
+actions:	0.0	0.0	0.07883622198879552	0.00706063675470188	0.06832733093237295	0.8457758103241296	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/first_aws_model/logfile_first_aws_model--8000.pickle
+------------------------------------------
+scores	avg: 101.22	std: 41.95606749923067	med: 100.0	min: 60.0	max: 260.0
+steps:	143.457+/-9.27718443278994	188.163+/-56.00611065767728	167.895+/-51.41167158340601
+actions:	0.5891094361530684	0.0	0.0	0.043562255387726095	0.002826741939681491	0.30568251203667557	0.05881905448284836	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/first_aws_model/logfile_first_aws_model--9000.pickle
+------------------------------------------
+scores	avg: 60.36	std: 4.6336162983138784	med: 60.0	min: 60.0	max: 120.0
+steps:	248.399+/-8.719392123307685	106.497+/-33.13804446553841	103.797+/-3.950669690065222
+actions:	0.2984610621919236	0.0	0.5329730342516672	0.0	0.10607312516214548	0.0	0.062492778394263704	0.0	0.0
+
