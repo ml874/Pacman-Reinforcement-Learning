@@ -14,20 +14,23 @@ env = gym.make("MsPacman-ram-v0")
 env = wrappers.Monitor(env, '/tmp/MsPacman-ram-experiment-1',force=True)
 
 for episode in range(EPISODES):
-    env.reset()
+    with open('../Saved Scores/performance_testrandom.txt', 'a+') as file:
 
-    reward, info, done = None, None, None
+        env.reset()
+
+        reward, info, done = None, None, None
 
 
-    total_score = 0
-    while done != True:
-        # env.render() # call if want to watch gui window
-        random_action = env.action_space.sample()
-        state, reward, done, info = env.step(random_action)
-        total_score += reward
-    ALL_SCORES[episode] = total_score
-    print("Total Score: {}".format(total_score))
-    # print(state, reward, done, info)
+        total_score = 0
+        while done != True:
+            # env.render() # call if want to watch gui window
+            random_action = env.action_space.sample()
+            state, reward, done, info = env.step(random_action)
+            total_score += reward
+        ALL_SCORES[episode] = total_score
+        print("Total Score: {}".format(total_score))
+        file.write("episode:" + str(episode) + "  score:" + str(total_score) + "\n")
+        # print(state, reward, done, info)
 
 env.close()
 # plt.plot(ALL_SCORES)
