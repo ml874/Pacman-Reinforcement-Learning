@@ -117,8 +117,8 @@ if __name__ == "__main__":
     scores, episodes = [], []
 
     # model meta data
-    model_name = "modified_rewards_1"
-    weights_path = "./saved-weights/" + model_name
+    model_name = "modified_rewards_2"
+    weights_path = "./modified_rewards_2-weights" + model_name
     episodes_per_save = 1000
     curr_episode = 1
 
