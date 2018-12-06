@@ -183,6 +183,7 @@ def main(plot_scores=True):
 #     print(agent.trained_frames)
     while True:
         print(curr_episode)
+        sys.stdout.flush()
 
         episodes.append(num_episodes)
         num_episodes += 1
