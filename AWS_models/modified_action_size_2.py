@@ -17,7 +17,7 @@ from gym import wrappers
 class DQNAgent:
     def __init__(self, state_size, action_size):
         # if you want to see MsPacman learning, then change to True
-        self.render = True
+        self.render = False
         self.load_model = False
 
         # get size of state and action
