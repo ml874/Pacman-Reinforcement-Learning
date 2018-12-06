@@ -1,5 +1,5 @@
-python3: can't open file '../modifed_rewards_1.py': [Errno 2] No such file or directory
-2018-12-06 01:18:20.296144: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2018-12-04 22:19:35.076768: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Running first episode
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
@@ -15,7 +15,6 @@ Total params: 50,697
 Trainable params: 50,697
 Non-trainable params: 0
 _________________________________________________________________
-Running first episode
 Completed: 50 episodes
 Completed: 100 episodes
 Completed: 150 episodes
@@ -80,3 +79,25 @@ Completed: 2950 episodes
 Completed: 3000 episodes
 saved weights successfully
 Completed: 3050 episodes
+Completed: 3100 episodes
+Completed: 3150 episodes
+Completed: 3200 episodes
+Completed: 3250 episodes
+Completed: 3300 episodes
+Completed: 3350 episodes
+Completed: 3400 episodes
+Completed: 3450 episodes
+Completed: 3500 episodes
+Completed: 3550 episodes
+Completed: 3600 episodes
+Completed: 3650 episodes
+Completed: 3700 episodes
+Completed: 3750 episodes
+Completed: 3800 episodes
+Completed: 3850 episodes
+Completed: 3900 episodes
+Completed: 3950 episodes
+Completed: 4000 episodes
+saved weights successfully
+Completed: 4050 episodes
+Completed: 4100 episodes

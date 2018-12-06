@@ -1,0 +1,46 @@
+2018-12-06 02:11:01.935368: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense_1 (Dense)              (None, 128)               16512     
+_________________________________________________________________
+dense_2 (Dense)              (None, 128)               16512     
+_________________________________________________________________
+dense_3 (Dense)              (None, 128)               16512     
+_________________________________________________________________
+dense_4 (Dense)              (None, 9)                 1161      
+=================================================================
+Total params: 50,697
+Trainable params: 50,697
+Non-trainable params: 0
+_________________________________________________________________
+Running first episode
+Completed: 50 episodes
+Completed: 100 episodes
+Completed: 150 episodes
+Completed: 200 episodes
+Completed: 250 episodes
+Completed: 300 episodes
+Completed: 350 episodes
+Completed: 400 episodes
+Completed: 450 episodes
+Completed: 500 episodes
+Completed: 550 episodes
+Completed: 600 episodes
+Completed: 650 episodes
+Completed: 700 episodes
+Completed: 750 episodes
+Completed: 800 episodes
+Completed: 850 episodes
+Completed: 900 episodes
+Completed: 950 episodes
+Completed: 1000 episodes
+saved weights successfully
+Completed: 1050 episodes
+Completed: 1100 episodes
+Completed: 1150 episodes
+Completed: 1200 episodes
+Completed: 1250 episodes
+Completed: 1300 episodes
+Completed: 1350 episodes
+Completed: 1400 episodes
