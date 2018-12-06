@@ -1,0 +1,120 @@
+2018-12-06 17:31:18.123031: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense_1 (Dense)              (None, 128)               16512     
+_________________________________________________________________
+dense_2 (Dense)              (None, 128)               16512     
+_________________________________________________________________
+dense_3 (Dense)              (None, 128)               16512     
+_________________________________________________________________
+dense_4 (Dense)              (None, 9)                 1161      
+=================================================================
+Total params: 50,697
+Trainable params: 50,697
+Non-trainable params: 0
+_________________________________________________________________
+Running first episode
+Completed: 17050 episodes
+Completed: 17100 episodes
+Completed: 17150 episodes
+Completed: 17200 episodes
+Completed: 17250 episodes
+Completed: 17300 episodes
+Completed: 17350 episodes
+Completed: 17400 episodes
+Completed: 17450 episodes
+Completed: 17500 episodes
+Completed: 17550 episodes
+Completed: 17600 episodes
+Completed: 17650 episodes
+Completed: 17700 episodes
+Completed: 17750 episodes
+Completed: 17800 episodes
+Completed: 17850 episodes
+Completed: 17900 episodes
+Completed: 17950 episodes
+Completed: 18000 episodes
+saved weights successfully
+Completed: 18050 episodes
+Completed: 18100 episodes
+Completed: 18150 episodes
+Completed: 18200 episodes
+Completed: 18250 episodes
+Completed: 18300 episodes
+Completed: 18350 episodes
+Completed: 18400 episodes
+Completed: 18450 episodes
+Completed: 18500 episodes
+Completed: 18550 episodes
+Completed: 18600 episodes
+Completed: 18650 episodes
+Completed: 18700 episodes
+Completed: 18750 episodes
+Completed: 18800 episodes
+Completed: 18850 episodes
+Completed: 18900 episodes
+Completed: 18950 episodes
+Completed: 19000 episodes
+saved weights successfully
+Completed: 19050 episodes
+Completed: 19100 episodes
+Completed: 19150 episodes
+Completed: 19200 episodes
+Completed: 19250 episodes
+Completed: 19300 episodes
+Completed: 19350 episodes
+Completed: 19400 episodes
+Completed: 19450 episodes
+Completed: 19500 episodes
+Completed: 19550 episodes
+Completed: 19600 episodes
+Completed: 19650 episodes
+Completed: 19700 episodes
+Completed: 19750 episodes
+Completed: 19800 episodes
+Completed: 19850 episodes
+Completed: 19900 episodes
+Completed: 19950 episodes
+Completed: 20000 episodes
+saved weights successfully
+Completed: 20050 episodes
+Completed: 20100 episodes
+Completed: 20150 episodes
+Completed: 20200 episodes
+Completed: 20250 episodes
+Completed: 20300 episodes
+Completed: 20350 episodes
+Completed: 20400 episodes
+Completed: 20450 episodes
+Completed: 20500 episodes
+Completed: 20550 episodes
+Completed: 20600 episodes
+Completed: 20650 episodes
+Completed: 20700 episodes
+Completed: 20750 episodes
+Completed: 20800 episodes
+Completed: 20850 episodes
+Completed: 20900 episodes
+Completed: 20950 episodes
+Completed: 21000 episodes
+saved weights successfully
+Completed: 21050 episodes
+Completed: 21100 episodes
+Completed: 21150 episodes
+Completed: 21200 episodes
+Completed: 21250 episodes
+Completed: 21300 episodes
+Completed: 21350 episodes
+Completed: 21400 episodes
+Completed: 21450 episodes
+Completed: 21500 episodes
+Completed: 21550 episodes
+Completed: 21600 episodes
+Completed: 21650 episodes
+Completed: 21700 episodes
+Completed: 21750 episodes
+Completed: 21800 episodes
+Completed: 21850 episodes
+Completed: 21900 episodes
+Completed: 21950 episodes

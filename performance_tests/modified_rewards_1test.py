@@ -60,107 +60,127 @@ import matplotlib.pyplot as plt
 import pickle
 import os
 
-def main(weight_path):
-
-    NUM_EPISODES = 1000
-    NUM_ACTIONS = 9
-    NUM_LIVES = 3
-
-    ALL_SCORES = np.zeros(NUM_EPISODES) # track scores for every episode
-    ALL_STEPS = np.zeros((NUM_EPISODES, NUM_LIVES)) # track steps for every episode
-    ALL_ACTIONS = np.zeros((NUM_EPISODES, NUM_ACTIONS)) # stores aggregate actions
-
-    env_orig = gym.make('MsPacman-ram-v0')
-    env = wrappers.Monitor(env_orig, '/tmp/MsPacman-ram-experiment-1',force=True)
-    # get size of state and action from environment
-    state_size = env.observation_space.shape[0]
-    action_size = env.action_space.n
-
+def main(weight_path, log_path, finished):
     split_path = weight_path.split("/")
     model_name = split_path[-1]
-    logfile = "logfile_" + model_name + ".pickle"
 
-    agent = TEST_DQNAgent(state_size, action_size, weight_path)
+    if model_name not in finished:
+        NUM_EPISODES = 1000
+        NUM_ACTIONS = 9
+        NUM_LIVES = 3
 
-    i1 = 0
-    i2 = 0
-    i3 = 0
+        ALL_SCORES = np.zeros(NUM_EPISODES) # track scores for every episode
+        ALL_STEPS = np.zeros((NUM_EPISODES, NUM_LIVES)) # track steps for every episode
+        ALL_ACTIONS = np.zeros((NUM_EPISODES, NUM_ACTIONS)) # stores aggregate actions
 
-    for e in range(NUM_EPISODES):
-        i1 += 1
-        done = False
-        score_in_episode = 0
-        state = env.reset()
-        state = np.reshape(state, [1, state_size])
-        num_lives = 3
-        while not done:
-            i2 += 1
-            # for every episode
-            dead = False
-            steps_in_life = 0 # number of steps taken in this life of this episode
+        env_orig = gym.make('MsPacman-ram-v0')
+        env = wrappers.Monitor(env_orig, '/tmp/MsPacman-ram-experiment-1',force=True)
+        # get size of state and action from environment
+        state_size = env.observation_space.shape[0]
+        action_size = env.action_space.n
 
-            while not dead:
-                i3 += 1
-                # for every life
-                if agent.render:
-                    env.render()
+        logfile = os.path.join(log_path, "logfile_" + model_name + ".pickle")
 
-                # get action for the current state and go one step in environment
-                action = agent.get_action(state)
-                ALL_ACTIONS[e][action] += 1
-                next_state, reward, done, info = env.step(action)
-                next_state = np.reshape(next_state, [1, state_size])
+        agent = TEST_DQNAgent(state_size, action_size, weight_path)
 
-                state = next_state
-                score_in_episode += reward
-                steps_in_life += 1
-                dead = info['ale.lives']!=num_lives
-                num_lives = info['ale.lives']
-                lives = info['ale.lives']
-                # if an action make the Pacman dead, then gives penalty of -100
+        i1 = 0
+        i2 = 0
+        i3 = 0
 
-            ALL_STEPS[e][NUM_LIVES - num_lives - 1] = steps_in_life
+        for e in range(NUM_EPISODES):
+            i1 += 1
+            done = False
+            score_in_episode = 0
+            state = env.reset()
+            state = np.reshape(state, [1, state_size])
+            num_lives = 3
+            while not done:
+                i2 += 1
+                # for every episode
+                dead = False
+                steps_in_life = 0 # number of steps taken in this life of this episode
 
-            if done:
-                # at the end of every life
-                # pylab.plot(episodes, scores, 'b')
-                # pylab.savefig("./pacman.png")
-                print("episode:", e, "\tscore:", score_in_episode, "\tsteps:", steps_in_life)
+                while not dead:
+                    i3 += 1
+                    # for every life
+                    if agent.render:
+                        env.render()
+
+                    # get action for the current state and go one step in environment
+                    action = agent.get_action(state)
+                    ALL_ACTIONS[e][action] += 1
+                    next_state, reward, done, info = env.step(action)
+                    next_state = np.reshape(next_state, [1, state_size])
+
+                    state = next_state
+                    score_in_episode += reward
+                    steps_in_life += 1
+                    dead = info['ale.lives']!=num_lives
+                    num_lives = info['ale.lives']
+                    lives = info['ale.lives']
+                    # if an action make the Pacman dead, then gives penalty of -100
+
+                ALL_STEPS[e][NUM_LIVES - num_lives - 1] = steps_in_life
+
+                if done:
+                    # at the end of every life
+                    # pylab.plot(episodes, scores, 'b')
+                    # pylab.savefig("./pacman.png")
+                    print("episode:", e, "\tscore:", score_in_episode, "\tsteps:", steps_in_life)
 
 
-        if e % 100 == 0 and e > 0:
-            print('Average Score for {} Episodes so far: {}'.format(e, np.mean(ALL_SCORES[1:e:1])))
+            if e % 100 == 0 and e > 0:
+                print('Average Score for {} Episodes so far: {}'.format(e, np.mean(ALL_SCORES[1:e:1])))
 
-        ALL_SCORES[e] = score_in_episode
+            ALL_SCORES[e] = score_in_episode
 
-    env.close()
-    env_orig.close()
-    # plt.plot(ALL_SCORES)
-    # plt.title("Random Agent: {} Episodes".format(EPISODES))
-    # plt.show()
+        env.close()
+        env_orig.close()
+        # plt.plot(ALL_SCORES)
+        # plt.title("Random Agent: {} Episodes".format(EPISODES))
+        # plt.show()
 
-    results = {
-        'scores'    :   ALL_SCORES,
-        'steps'     :   ALL_STEPS,
-        'actions'   :   ALL_ACTIONS
-    }
+        results = {
+            'scores'    :   ALL_SCORES,
+            'steps'     :   ALL_STEPS,
+            'actions'   :   ALL_ACTIONS
+        }
 
-    with open(logfile, 'wb+') as f:
-        pickle.dump(results, f)
+        with open(logfile, 'wb+') as f:
+            pickle.dump(results, f)
 
-    print("-------------------------")
-    print("Weight file: " + weight_path)
-    print('Average Score for {} Episodes: {}'.format(NUM_EPISODES, np.mean(ALL_SCORES)))
+        print("-------------------------")
+        print("Weight file: " + weight_path)
+        print('Average Score for {} Episodes: {}'.format(NUM_EPISODES, np.mean(ALL_SCORES)))
+
+        finished.add(model_name)
+
+    else:
+        print("Model {} has already been run. Skipping.".format{model_name})
+
+    return finished
 
 
 if __name__=="__main__":
-    root_base = "/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/AWS_models/"
-    test_dir = "joe_rewards"
+    true_root = "/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/"
+    models_dir = "AWS_models/"
+    test_dir = "first_aws_model-cont"
+    finished_path = "finished.txt"
 
-    for root, dirs, files in os.walk(os.path.join(root_base, test_dir)):
+    finished = set(open(finished_path, "r").read().split("\n"))
+
+    for root, dirs, files in os.walk(os.path.join(true_root, models_dir, test_dir)):
         for file in files:
             if "--" in file:
-                path = os.path.join(root, file)
-                print(path)
-                assert(os.path.exists(path))
-                main(path)
+                weight_path = os.path.join(root, file)
+                print(weight_path)
+                assert(os.path.exists(weight_path))
+
+                log_path = os.path.join(true_root, "performance_tests", "data", test_dir)
+                print(log_path)
+                assert(os.path.exists(log_path))
+                finished = main(weight_path, log_path, finished)
+
+    with open(finished_path, "w") as f:
+        for model_name in finished:
+            f.write(model_name + "\n")
