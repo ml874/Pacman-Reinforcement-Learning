@@ -27,7 +27,7 @@ class DQNAgent:
         # These are hyper parameters for the DQN
         self.discount_factor = 0.90
         self.learning_rate = 0.001
-        self.epsilon = 1.0
+        self.epsilon = 0.05
         self.epsilon_decay = 0.9999999
         self.epsilon_min = 0.05
         self.batch_size = 128
@@ -122,7 +122,7 @@ if __name__ == "__main__":
     episodes_per_save = 1000
     thousands_of_episodes = 0
     curr_episode = 6001
-    
+
     print("Running first episode")
 
     while True:
@@ -157,14 +157,14 @@ if __name__ == "__main__":
             if done:
                 scores.append(score)
                 episodes.append(e)
-                pylab.plot(episodes, scores, 'b')
-                pylab.savefig("./pacman.png")
+                # pylab.plot(episodes, scores, 'b')
+                # pylab.savefig("./pacman.png")
                 # print("episode:", e, "  score:", score, "  memory length:",
                       # len(agent.memory), "  epsilon:", agent.epsilon)
 
         # every time step do the training
         agent.train_model()
-       
+
         if curr_episode % 50 == 0:
             print("Completed: " + str(curr_episode) + " episodes")
             sys.stdout.flush()
