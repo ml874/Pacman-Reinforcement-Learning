@@ -1,0 +1,24 @@
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_rewards_1/log1.pickle
+------------------------------------------
+scores	avg: 90.0	std: 0.0	med: 90.0	min: 90.0	max: 90.0
+steps:	81.0+/-0.0	0.0+/-0.0	0.0+/-0.0
+actions:	0.0	0.9954648526077098	0.0	0.0	0.0	0.0	0.0	0.0	0.0045351473922902496
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_rewards_1/logfile_modified_rewards_1--1000.pickle
+------------------------------------------
+scores	avg: 673.33	std: 317.0189443866092	med: 565.0	min: 180.0	max: 2140.0
+steps:	389.349+/-129.12748428975138	306.021+/-158.90823313787112	207.734+/-98.36963578259292
+actions:	0.2936151318120615	0.007504119126922259	0.0	0.013833401247253916	0.049849186804620506	0.3440489688895188	0.0022965239883778613	0.2888526681312451	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_rewards_1/logfile_modified_rewards_1--2000.pickle
+------------------------------------------
+scores	avg: 70.0	std: 0.0	med: 70.0	min: 70.0	max: 70.0
+steps:	249.02+/-4.324303412111594	240.122+/-4.20750710040994	199.742+/-3.9816373516431662
+actions:	0.0	0.0	0.0	0.0	0.0	0.05908106444626381	0.054068609519164326	0.8868503260345718	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_rewards_1/logfile_modified_rewards_1--3000.pickle
+------------------------------------------
+scores	avg: 90.0	std: 0.0	med: 90.0	min: 90.0	max: 90.0
+steps:	134.492+/-3.052857022528243	226.899+/-4.0687589016799635	82.4+/-2.565540878645284
+actions:	0.0	0.993900281889448	0.0	0.0	0.0	0.0	0.0	0.0	0.006099718110552039
+
