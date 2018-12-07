@@ -5,7 +5,7 @@ import seaborn as sns
 import numpy as np
 import pickle
 
-# python3 -i plot2.py "../performance_tests/data/first_aws_model/" "First AWS Model"
+# python3 -i table1plot2.py "../performance_tests/data/first_aws_model/" "First AWS Model"
 args = (sys.argv[1:])
 
 dir = os.listdir(args[0])
