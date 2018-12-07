@@ -27,10 +27,28 @@ action_counts = action_sum[logfile_names[idx_epoch]]
 action_freq = action_dist[logfile_names[idx_epoch]]
 
 fig,ax = plt.subplots()
-patches, texts = ax.pie([c for c in action_counts if c != 0], startangle=90)
+col_scheme = ['#8dd3c7',
+'#ffffb3',
+'#bebada',
+'#fb8072',
+'#80b1d3',
+'#fdb462',
+'#b3de69',
+'#fccde5',
+'#d9d9d9']
+actions = ['NOOP',
+ 'UP',
+ 'RIGHT',
+ 'LEFT',
+ 'DOWN',
+ 'UPRIGHT',
+ 'UPLEFT',
+ 'DOWNRIGHT',
+ 'DOWNLEFT']
+colors = [col_scheme[r] for r in range(9) if action_counts[r] != 0]
+labels = [(actions[r] +": " +  "%.2E"%action_freq[r]) for r in range(9) if action_counts[r] != 0]
+patches, texts = ax.pie([c for c in action_counts if c != 0], colors = colors, startangle=90)
 ax.axis('equal')
-
-labels = [(str(r) +": " +  "%.2E"%action_freq[r]) for r in range(9) if action_counts[r] != 0]
 plt.legend(patches, labels, title = "Action Proportions", loc = "best")
 plt.title("{}: Average Distribution of Actions".format(args[2]))
 plt.show()
