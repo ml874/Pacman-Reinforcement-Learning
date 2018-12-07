@@ -1,0 +1,150 @@
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_action_size_2/logfile_modified_action_size_2--02000.pickle
+------------------------------------------
+scores	avg: 64.86	std: 5.760243050427647	med: 60.0	min: 60.0	max: 80.0
+steps:	153.227+/-3.381637325320384	136.44+/-3.359523775775372	227.0+/-30.64065926183704
+actions:	0.0	0.6778389175232791	0.057919317471408084	0.2642417650053129	0.0	0.0	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_action_size_2/logfile_modified_action_size_2--03000.pickle
+------------------------------------------
+scores	avg: 60.0	std: 0.0	med: 60.0	min: 60.0	max: 60.0
+steps:	152.972+/-3.4602335181313952	138.651+/-3.291382536260406	140.88+/-3.242159773977821
+actions:	0.7612594594719574	0.23874054052804258	0.0	0.0	0.0	0.0	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_action_size_2/logfile_modified_action_size_2--04000.pickle
+------------------------------------------
+scores	avg: 60.0	std: 0.0	med: 60.0	min: 60.0	max: 60.0
+steps:	149.822+/-4.36855994579449	118.707+/-15.901545553813298	119.329+/-16.857483768344565
+actions:	0.7719062130986083	0.004328903877192168	0.002877341707532138	0.22088754131666744	0.0	0.0	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_action_size_2/logfile_modified_action_size_2--05000.pickle
+------------------------------------------
+scores	avg: 60.16	std: 1.2547509713086498	med: 60.0	min: 60.0	max: 70.0
+steps:	229.88+/-28.880505535741616	134.3+/-45.05927207578918	129.116+/-38.01905501192787
+actions:	0.177047857675716	0.0	0.8154252213681036	0.007526920956180468	0.0	0.0	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_action_size_2/logfile_modified_action_size_2--06000.pickle
+------------------------------------------
+scores	avg: 60.0	std: 0.0	med: 60.0	min: 60.0	max: 60.0
+steps:	152.906+/-3.3715225047447115	138.631+/-3.3595891117813754	141.012+/-3.2140093341494884
+actions:	1.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_action_size_2/logfile_modified_action_size_2--07000.pickle
+------------------------------------------
+scores	avg: 60.0	std: 0.0	med: 60.0	min: 60.0	max: 60.0
+steps:	153.224+/-3.2400345677168336	138.743+/-3.1033773537873155	140.905+/-3.387620846552925
+actions:	0.5115507586538284	0.3224093958491194	0.12350995213365613	0.04252989336339611	0.0	0.0	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_action_size_2/logfile_modified_action_size_2--08000.pickle
+------------------------------------------
+scores	avg: 60.0	std: 0.0	med: 60.0	min: 60.0	max: 60.0
+steps:	152.907+/-3.2631811166406317	138.554+/-3.212333108505408	141.046+/-3.1390896769604995
+actions:	0.8198526266626899	0.0	0.16175923164249364	0.0183881416948165	0.0	0.0	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_action_size_2/logfile_modified_action_size_2--09000.pickle
+------------------------------------------
+scores	avg: 60.0	std: 0.0	med: 60.0	min: 60.0	max: 60.0
+steps:	248.937+/-4.242055044433066	103.898+/-2.8442215103609616	103.651+/-2.7769045716408685
+actions:	0.16948164894432688	0.04385457604395315	0.7866637750117199	0.0	0.0	0.0	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_action_size_2/logfile_modified_action_size_2--10000.pickle
+------------------------------------------
+scores	avg: 60.0	std: 0.0	med: 60.0	min: 60.0	max: 60.0
+steps:	152.951+/-3.3127932323041063	138.578+/-3.31148244748481	140.906+/-3.271874691977067
+actions:	0.0	0.04468879716026686	0.0	0.9553112028397331	0.0	0.0	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_action_size_2/logfile_modified_action_size_2--11000.pickle
+------------------------------------------
+scores	avg: 60.0	std: 0.0	med: 60.0	min: 60.0	max: 60.0
+steps:	153.087+/-3.4881844848000876	138.603+/-3.1942747220613334	140.989+/-3.438441362012733
+actions:	0.8135523101421608	0.056411334961946384	0.12320912269835144	0.006827232197541364	0.0	0.0	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_action_size_2/logfile_modified_action_size_2--12000.pickle
+------------------------------------------
+scores	avg: 60.0	std: 0.0	med: 60.0	min: 60.0	max: 60.0
+steps:	152.967+/-3.412610584288811	138.722+/-3.149399307804586	141.188+/-3.38003786961034
+actions:	0.5785477167879097	0.0	0.4214522832120903	0.0	0.0	0.0	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_action_size_2/logfile_modified_action_size_2--13000.pickle
+------------------------------------------
+scores	avg: 120.0	std: 0.0	med: 120.0	min: 120.0	max: 120.0
+steps:	153.115+/-3.350787220937786	365.163+/-162.70393489710054	129.96+/-16.77946363862683
+actions:	0.6180677467226543	0.0	0.33383417818764094	0.048098075089704706	0.0	0.0	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_action_size_2/logfile_modified_action_size_2--14000.pickle
+------------------------------------------
+scores	avg: 120.73	std: 25.305475692031557	med: 120.0	min: 60.0	max: 300.0
+steps:	151.94+/-3.8393228569631894	179.079+/-50.10246260414749	137.12+/-51.815997529720484
+actions:	0.05164918966375372	0.01135346553053687	0.7407714375431229	0.19622590726258654	0.0	0.0	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_action_size_2/logfile_modified_action_size_2--15000.pickle
+------------------------------------------
+scores	avg: 66.05	std: 4.888506929523574	med: 70.0	min: 60.0	max: 70.0
+steps:	237.856+/-37.44504325007523	138.644+/-51.48964229823306	145.42+/-58.60347771250453
+actions:	0.06869635193133047	2.107602697731453e-05	0.8295715818516247	0.10171099019006745	0.0	0.0	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_action_size_2/logfile_modified_action_size_2--16000.pickle
+------------------------------------------
+scores	avg: 60.0	std: 0.0	med: 60.0	min: 60.0	max: 60.0
+steps:	249.15+/-4.362052269287927	104.203+/-2.8056712209380477	103.738+/-2.8374911453606324
+actions:	0.0	0.13449619441205363	0.8655038055879464	0.0	0.0	0.0	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_action_size_2/logfile_modified_action_size_2--17000.pickle
+------------------------------------------
+scores	avg: 60.72	std: 2.623280389131135	med: 60.0	min: 60.0	max: 80.0
+steps:	153.045+/-3.508984895949245	138.856+/-3.329153646199002	195.423+/-55.48581864765091
+actions:	0.0	0.0	0.012180807840369037	0.987819192159631	0.0	0.0	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_action_size_2/logfile_modified_action_size_2--18000.pickle
+------------------------------------------
+scores	avg: 60.39	std: 1.9359493795035037	med: 60.0	min: 60.0	max: 70.0
+steps:	153.124+/-3.3568771201817875	138.718+/-3.259520823679458	187.491+/-55.16892167697308
+actions:	0.09507377960624451	0.18958219025187084	0.059987524330684515	0.6553565058112002	0.0	0.0	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_action_size_2/logfile_modified_action_size_2--19000.pickle
+------------------------------------------
+scores	avg: 60.0	std: 0.0	med: 60.0	min: 60.0	max: 60.0
+steps:	153.05+/-3.3330916579056127	138.654+/-3.2619448186626347	141.008+/-3.2566756055830948
+actions:	0.09614246889386012	0.33966471925899905	0.0	0.5641928118471409	0.0	0.0	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_action_size_2/logfile_modified_action_size_2--20000.pickle
+------------------------------------------
+scores	avg: 60.48	std: 2.137662274541982	med: 60.0	min: 60.0	max: 70.0
+steps:	153.251+/-3.5165322407166992	176.361+/-41.57973880389341	139.417+/-8.104141595505354
+actions:	0.3322971500696119	0.10079760526534606	0.2380087371996188	0.32889650746542326	0.0	0.0	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_action_size_2/logfile_modified_action_size_2--21000.pickle
+------------------------------------------
+scores	avg: 60.0	std: 0.0	med: 60.0	min: 60.0	max: 60.0
+steps:	248.976+/-4.074729929700865	104.007+/-2.7347670833180766	103.632+/-2.7789523205697515
+actions:	0.22727461866123538	0.3226109523340232	0.38970905467406897	0.060405374330672446	0.0	0.0	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_action_size_2/logfile_modified_action_size_2--22000.pickle
+------------------------------------------
+scores	avg: 60.0	std: 0.0	med: 60.0	min: 60.0	max: 60.0
+steps:	153.144+/-3.3141007830179356	138.594+/-3.2834682882586157	141.094+/-3.3228247019666908
+actions:	0.2852423111045394	0.47157788703238207	0.0	0.24317980186307853	0.0	0.0	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_action_size_2/logfile_modified_action_size_2--23000.pickle
+------------------------------------------
+scores	avg: 119.64	std: 3.2665578213158875	med: 120.0	min: 90.0	max: 120.0
+steps:	152.908+/-3.420750794781752	176.094+/-40.48193626792082	107.839+/-25.46038253836734
+actions:	0.20030400076915858	0.0	0.3843892858042171	0.41530671342662434	0.0	0.0	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_action_size_2/logfile_modified_action_size_2--24000.pickle
+------------------------------------------
+scores	avg: 95.54	std: 26.994599459891976	med: 120.0	min: 60.0	max: 120.0
+steps:	270.3+/-43.52537191110483	134.36+/-48.26649355401735	164.465+/-76.5715794208268
+actions:	0.8479947287502746	0.00020206457280913683	0.13925587524708982	0.012547331429826489	0.0	0.0	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_action_size_2/logfile_modified_action_size_2--25000.pickle
+------------------------------------------
+scores	avg: 60.0	std: 0.0	med: 60.0	min: 60.0	max: 60.0
+steps:	153.106+/-3.424436303977635	138.761+/-3.2719839547283858	141.221+/-3.175556486664968
+actions:	0.09418178291709768	0.0	0.0	0.9058182170829023	0.0	0.0	0.0	0.0	0.0
+
+/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/performance_tests/data/modified_action_size_2/logfile_modified_action_size_2--26000.pickle
+------------------------------------------
+scores	avg: 231.89	std: 74.31236707305185	med: 220.0	min: 120.0	max: 720.0
+steps:	294.151+/-61.522794141683775	162.807+/-77.95276615361391	161.649+/-64.3902461479998
+actions:	0.04738549676935437	0.5360511601064973	0.3535071539765958	0.06305618914755248	0.0	0.0	0.0	0.0	0.0
+
