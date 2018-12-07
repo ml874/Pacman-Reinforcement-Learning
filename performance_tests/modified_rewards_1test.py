@@ -60,11 +60,11 @@ import matplotlib.pyplot as plt
 import pickle
 import os
 
-def main(weight_path, log_path, finished):
+def main(weight_path, log_path, finished_files):
     split_path = weight_path.split("/")
     model_name = split_path[-1]
 
-    if model_name not in finished:
+    if model_name not in finished_files:
         NUM_EPISODES = 1000
         NUM_ACTIONS = 9
         NUM_LIVES = 3
@@ -153,34 +153,33 @@ def main(weight_path, log_path, finished):
         print("Weight file: " + weight_path)
         print('Average Score for {} Episodes: {}'.format(NUM_EPISODES, np.mean(ALL_SCORES)))
 
-        finished.add(model_name)
+        return model_name
 
     else:
-        print("Model {} has already been run. Skipping.".format{model_name})
-
-    return finished
+        print("Model {} has already been run. Skipping.".format(model_name))
 
 
 if __name__=="__main__":
     true_root = "/home/knavejack/Documents/School/2018-2019/CS4701/Pacman-Reinforcement-Learning/"
     models_dir = "AWS_models/"
-    test_dir = "first_aws_model-cont"
+    test_dir = "first_aws_model_cont"
     finished_path = "finished.txt"
 
-    finished = set(open(finished_path, "r").read().split("\n"))
+    finished_files = set(open(finished_path, "r").read().split("\n"))
 
-    for root, dirs, files in os.walk(os.path.join(true_root, models_dir, test_dir)):
-        for file in files:
-            if "--" in file:
-                weight_path = os.path.join(root, file)
-                print(weight_path)
-                assert(os.path.exists(weight_path))
+    with open(finished_path, 'a') as f:
+        for root, dirs, files in os.walk(os.path.join(true_root, models_dir, test_dir)):
+            for file in files:
+                if "--" in file:
+                    weight_path = os.path.join(root, file)
+                    print(weight_path)
+                    assert(os.path.exists(weight_path))
 
-                log_path = os.path.join(true_root, "performance_tests", "data", test_dir)
-                print(log_path)
-                assert(os.path.exists(log_path))
-                finished = main(weight_path, log_path, finished)
+                    log_path = os.path.join(true_root, "performance_tests", "data", test_dir)
+                    print(log_path)
+                    assert(os.path.exists(log_path))
+                    finished = main(weight_path, log_path, finished_files)
 
-    with open(finished_path, "w") as f:
-        for model_name in finished:
-            f.write(model_name + "\n")
+                    if finished:
+                        f.write(finished+"\n")
+                        f.flush()
