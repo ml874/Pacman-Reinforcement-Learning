@@ -5,7 +5,7 @@ import seaborn as sns
 import numpy as np
 import pickle
 
-# python3 -i table3plot.py "../performance_tests/data/first_aws_model/" num_epochs "First AWS Model (1000 Epochs)"
+# python3 -i table3plot.py "../performance_tests/data/first_aws_model/" num_epochs "First AWS Model (1000)"
 args = (sys.argv[1:])
 
 dir = os.listdir(args[0])
