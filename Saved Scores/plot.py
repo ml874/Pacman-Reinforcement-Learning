@@ -17,7 +17,7 @@ sns.set(style="ticks")
 fig, (ax_box, ax_hist) = plt.subplots(2, sharex=True,
                                     gridspec_kw={"height_ratios": (.15, .85)})
 
-plt.suptitle("{}: {} Episodes".format(args[1],len(scores)), y = 0.95, fontsize=18)
+plt.suptitle("{}:\n Test Scores Across {} Episodes".format(args[1],len(scores)))
 
 sns.boxplot(scores, ax=ax_box)
 sns.distplot(scores, ax=ax_hist, bins = np.arange(np.amax(scores), step = 50), norm_hist = False)
