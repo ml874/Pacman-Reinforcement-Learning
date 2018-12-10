@@ -1,0 +1,354 @@
+../AWS_models/first_aws_model-cont/first_aws_modelcont--36000
+		Average score: 383.5
+		Maximum score: 580.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--37000
+		Average score: 376.5
+		Maximum score: 710.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--38000
+		Average score: 222.0
+		Maximum score: 490.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--39000
+		Average score: 266.0
+		Maximum score: 940.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--40000
+		Average score: 290.5
+		Maximum score: 490.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--41000
+		Average score: 394.5
+		Maximum score: 780.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--42000
+		Average score: 561.0
+		Maximum score: 1350.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--43000
+		Average score: 649.0
+		Maximum score: 1370.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--44000
+		Average score: 455.0
+		Maximum score: 1440.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--45000
+		Average score: 459.0
+		Maximum score: 980.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--46000
+		Average score: 609.0
+		Maximum score: 820.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--47000
+		Average score: 557.0
+		Maximum score: 1130.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--48000
+		Average score: 154.0
+		Maximum score: 190.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--49000
+		Average score: 73.0
+		Maximum score: 120.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--50000
+		Average score: 771.5
+		Maximum score: 1660.0
+		^^^^^^^^^^^^^^^^^^^^^^^^^^
+../AWS_models/first_aws_model-cont/first_aws_modelcont--51000
+		Average score: 730.5
+		Maximum score: 1850.0
+		^^^^^^^^^^^^^^^^^^^^^^^^^^
+../AWS_models/first_aws_model-cont/first_aws_modelcont--52000
+		Average score: 211.5
+		Maximum score: 240.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--53000
+		Average score: 595.5
+		Maximum score: 1640.0
+		^^^^^^^^^^^^^^^^^^^^^^^^^^
+../AWS_models/first_aws_model-cont/first_aws_modelcont--54000
+		Average score: 147.0
+		Maximum score: 1070.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--55000
+		Average score: 343.0
+		Maximum score: 540.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--56000
+		Average score: 370.0
+		Maximum score: 990.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--57000
+		Average score: 731.0
+		Maximum score: 2380.0
+		^^^^^^^^^^^^^^^^^^^^^^^^^^
+../AWS_models/first_aws_model-cont/first_aws_modelcont--58000
+		Average score: 501.5
+		Maximum score: 1820.0
+		^^^^^^^^^^^^^^^^^^^^^^^^^^
+../AWS_models/first_aws_model-cont/first_aws_modelcont--59000
+		Average score: 511.0
+		Maximum score: 1260.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--60000
+		Average score: 343.0
+		Maximum score: 670.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--61000
+		Average score: 623.0
+		Maximum score: 1310.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--62000
+		Average score: 390.0
+		Maximum score: 940.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--63000
+		Average score: 289.5
+		Maximum score: 570.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--64000
+		Average score: 362.0
+		Maximum score: 1020.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--65000
+		Average score: 219.5
+		Maximum score: 320.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--66000
+		Average score: 407.0
+		Maximum score: 930.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--67000
+		Average score: 394.0
+		Maximum score: 1070.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--68000
+		Average score: 615.0
+		Maximum score: 2150.0
+		^^^^^^^^^^^^^^^^^^^^^^^^^^
+../AWS_models/first_aws_model-cont/first_aws_modelcont--69000
+		Average score: 156.0
+		Maximum score: 1120.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--70000
+		Average score: 71.0
+		Maximum score: 80.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--71000
+		Average score: 662.0
+		Maximum score: 1160.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--72000
+		Average score: 470.5
+		Maximum score: 1140.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--73000
+		Average score: 377.0
+		Maximum score: 1000.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--74000
+		Average score: 229.5
+		Maximum score: 580.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--75000
+		Average score: 153.5
+		Maximum score: 190.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--76000
+		Average score: 257.0
+		Maximum score: 550.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--77000
+		Average score: 238.5
+		Maximum score: 530.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--78000
+		Average score: 452.5
+		Maximum score: 1020.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--79000
+		Average score: 900.0
+		Maximum score: 2190.0
+		^^^^^^^^^^^^^^^^^^^^^^^^^^
+../AWS_models/first_aws_model-cont/first_aws_modelcont--80000
+		Average score: 610.0
+		Maximum score: 2080.0
+		^^^^^^^^^^^^^^^^^^^^^^^^^^
+../AWS_models/first_aws_model-cont/first_aws_modelcont--81000
+		Average score: 342.5
+		Maximum score: 380.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--82000
+		Average score: 200.5
+		Maximum score: 530.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--83000
+		Average score: 225.5
+		Maximum score: 340.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--84000
+		Average score: 218.5
+		Maximum score: 250.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--85000
+		Average score: 299.0
+		Maximum score: 520.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--86000
+		Average score: 120.0
+		Maximum score: 120.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--87000
+		Average score: 190.0
+		Maximum score: 190.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--88000
+		Average score: 144.5
+		Maximum score: 300.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--89000
+		Average score: 191.5
+		Maximum score: 200.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--90000
+		Average score: 337.0
+		Maximum score: 1020.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--91000
+		Average score: 354.5
+		Maximum score: 500.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--92000
+		Average score: 204.5
+		Maximum score: 410.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--93000
+		Average score: 145.0
+		Maximum score: 270.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--94000
+		Average score: 164.5
+		Maximum score: 230.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--95000
+		Average score: 60.0
+		Maximum score: 60.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--96000
+		Average score: 160.5
+		Maximum score: 320.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--97000
+		Average score: 180.0
+		Maximum score: 180.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--98000
+		Average score: 565.5
+		Maximum score: 930.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--99000
+		Average score: 302.5
+		Maximum score: 760.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--100000
+		Average score: 408.5
+		Maximum score: 950.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--101000
+		Average score: 304.0
+		Maximum score: 360.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--102000
+		Average score: 567.0
+		Maximum score: 1120.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--103000
+		Average score: 478.5
+		Maximum score: 2090.0
+		^^^^^^^^^^^^^^^^^^^^^^^^^^
+../AWS_models/first_aws_model-cont/first_aws_modelcont--104000
+		Average score: 437.5
+		Maximum score: 900.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--105000
+		Average score: 551.5
+		Maximum score: 1160.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--106000
+		Average score: 590.0
+		Maximum score: 1220.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--107000
+		Average score: 140.0
+		Maximum score: 140.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--108000
+		Average score: 1259.0
+		Maximum score: 1800.0
+		^^^^^^^^^^^^^^^^^^^^^^^^^^
+../AWS_models/first_aws_model-cont/first_aws_modelcont--109000
+		Average score: 374.5
+		Maximum score: 740.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--110000
+		Average score: 398.0
+		Maximum score: 460.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--111000
+		Average score: 328.5
+		Maximum score: 800.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--112000
+		Average score: 622.5
+		Maximum score: 1900.0
+		^^^^^^^^^^^^^^^^^^^^^^^^^^
+../AWS_models/first_aws_model-cont/first_aws_modelcont--113000
+		Average score: 144.5
+		Maximum score: 150.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--114000
+		Average score: 319.0
+		Maximum score: 400.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--115000
+		Average score: 185.5
+		Maximum score: 350.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--116000
+		Average score: 958.0
+		Maximum score: 3940.0
+		^^^^^^^^^^^^^^^^^^^^^^^^^^
+../AWS_models/first_aws_model-cont/first_aws_modelcont--117000
+		Average score: 309.5
+		Maximum score: 470.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--118000
+		Average score: 602.0
+		Maximum score: 1130.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--119000
+		Average score: 451.0
+		Maximum score: 1530.0
+		^^^^^^^^^^^^^^^^^^^^^^^^^^
+../AWS_models/first_aws_model-cont/first_aws_modelcont--120000
+		Average score: 240.0
+		Maximum score: 280.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--121000
+		Average score: 80.0
+		Maximum score: 120.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--122000
+		Average score: 625.5
+		Maximum score: 1850.0
+		^^^^^^^^^^^^^^^^^^^^^^^^^^
+../AWS_models/first_aws_model-cont/first_aws_modelcont--123000
+		Average score: 656.5
+		Maximum score: 750.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--124000
+		Average score: 184.0
+		Maximum score: 240.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--125000
+		Average score: 384.5
+		Maximum score: 510.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--126000
+		Average score: 526.5
+		Maximum score: 1300.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--127000
+		Average score: 401.0
+		Maximum score: 1280.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--128000
+		Average score: 617.0
+		Maximum score: 620.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--129000
+		Average score: 479.0
+		Maximum score: 850.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--130000
+		Average score: 218.5
+		Maximum score: 360.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--131000
+		Average score: 329.5
+		Maximum score: 380.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--132000
+		Average score: 537.5
+		Maximum score: 990.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--133000
+		Average score: 539.5
+		Maximum score: 1150.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--134000
+		Average score: 369.0
+		Maximum score: 630.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--135000
+		Average score: 348.5
+		Maximum score: 560.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--136000
+		Average score: 656.0
+		Maximum score: 1020.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--137000
+		Average score: 361.5
+		Maximum score: 640.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--138000
+		Average score: 405.0
+		Maximum score: 600.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--139000
+		Average score: 625.5
+		Maximum score: 1460.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--140000
+		Average score: 336.5
+		Maximum score: 370.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--141000
+		Average score: 333.5
+		Maximum score: 430.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--142000
+		Average score: 124.0
+		Maximum score: 140.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--143000
+		Average score: 123.5
+		Maximum score: 330.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--144000
+		Average score: 372.5
+		Maximum score: 520.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--145000
+		Average score: 358.0
+		Maximum score: 480.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--146000
+		Average score: 593.0
+		Maximum score: 1050.0
+../AWS_models/first_aws_model-cont/first_aws_modelcont--147000
+		Average score: 586.5
+		Maximum score: 1830.0
+		^^^^^^^^^^^^^^^^^^^^^^^^^^
+../AWS_models/first_aws_model-cont/first_aws_modelcont--148000
+		Average score: 460.0
+		Maximum score: 1150.0
